@@ -10,11 +10,11 @@
 /* FOR WEB VIEW */
 @media only screen and (min-width: 769px){
     .background-web {
-        background-image: url(/assets/images/try.jpg);
+        background-image: url(assets/images/try.jpg);
         background-size: cover;
 }
     .background-web1 {
-        background-image: url(/assets/images/background2.png);
+        background-image: url(assets/images/background2.png);
         background-size: cover;
 }
 
@@ -64,16 +64,16 @@
 /* FOR MOBILE VIEW */
 @media only screen and (max-width: 768px) {
     .background-mobile1 {
-        background-image: url(/assets/images/background2_mobile.png);
+        background-image: url(assets/images/background2_mobile.png);
         background-size: cover;
     }
     .background-mobile {
-        background-image: url(/assets/images/background2mobile.png);
+        background-image: url(assets/images/background2mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
 }
     .cover {
-        background-image: url(/assets/images/background2mobile.png);
+        background-image: url(assets/images/background2mobile.png);
         object-fit: cover;
     }
 
