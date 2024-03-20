@@ -1,0 +1,10 @@
+.background-image{
+    background-image: url(/assets/img/fYonOi6.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 767px) {
+    .background-image{
+    background-position: 30% center;
+ }

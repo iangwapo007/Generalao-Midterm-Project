@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="poppins bg-success-subtle">
+    <header>
+        <!-- navbar for web -->
+        <nav class="navbar web-nav shadow fixed-top" style="z-index: 1000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/images/logo1.png" width="130px" alt=""></a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <a class="ms-3 px-2 text-decoration-none text-black mt-2" href="menu.html">Home</a>
+                    <div class="dropdown pt-2 px-1 ">
+                        <a class="dropdown-toggle text-decoration-none text-black" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="grilling&bbq.html">Grilling & Barbeque</a></li>
+                            <li><a class="dropdown-item" href="soups&stew.html">Soups & Stews</a></li>
+                            <li><a class="dropdown-item" href="salads.html">Salads</a></li>
+                            <li><a class="dropdown-item" href="sandwhiches&wraps.html">Sandwhiches & Wraps</a></li>
+                            <li><a class="dropdown-item" href="pasta&noodles.html">Pasta & Noodles</a></li>
+                            <li><a class="dropdown-item" href="desserts.html">Desserts</a></li>
+                            <li><a class="dropdown-item" href="healthy&light.html">Healthy & Light</a></li>
+                            <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                        </ul>
+                    </div>
+                    <a class="px-2 text-decoration-none text-black mt-2" href="">Favorites</a>
+                    <a class="px-2 text-decoration-none text-black mt-2" href="index.html">Logout</a>
+                </form>
+            </div>
+        </nav>
+        <!-- end of nav for web -->
+        <!-- navbar for mobile -->
+        <nav class="navbar mobile-nav bg-body-tertiary fixed-top" style="z-index: 1000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/images/logo1.png" width="100px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href=""><img src="/assets/images/logo1.png" width="130px" alt=""></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="ms-4">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="menu.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="grilling&bbq.html">Grilling & Barbeque</a></li>
+                                        <li><a class="dropdown-item" href="soups&stew.html">Soups & Stews</a></li>
+                                        <li><a class="dropdown-item" href="salads.html">Salads</a></li>
+                                        <li><a class="dropdown-item" href="sandwhiches&wraps.html">Sandwhiches & Wraps</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="pasta&noodles.html">Pasta & Noodles</a></li>
+                                        <li><a class="dropdown-item" href="desserts.html">Desserts</a></li>
+                                        <li><a class="dropdown-item" href="healthy&light.html">Healthy & Light</a></li>
+                                        <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Favorites</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-lsink active text-decoration-none text-black " aria-current="page"
+                                        href="index.html">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar for mobile -->
+    </header><br><br><br><br><br>
+    <h2 class="text-center">Desserts</h2>
+    <div class="container bg-white mt-3 rounded-3 mb-5 ">
+        <div class="row py-4 px-2">
+            <div class="col-6 col-lg-2">
+                <img class="rounded-3" src="/assets/images/thumbnails/desserts/Classic-Chocolate-Chip-Cookies-6.jpg"
+                    height="120px" width="180px" alt="">
+            </div>
+            <div class="col-6  col-lg-10">
+                <div class="ms-3">
+                    <span class="fs-4 fw-medium">Classic Chocolate Chip Cookies</span>
+                    <br>
+                    <span class="text-secondary">By Iangwapo007</span>
+                    <br>
+                    <span class="text-secondary">17 Likes</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-4 px-2">
+            <div class="col-6 col-lg-2">
+                <img class="rounded-3"
+                    src="/assets/images/thumbnails/desserts/fudgebrownies.jpg"
+                    height="120px" width="180px" alt="">
+            </div>
+            <div class="col-6  col-lg-10">
+                <div class="ms-3">
+                    <span class="fs-4 fw-medium">Fudgy Brownies with Walnuts</span>
+                    <br>
+                    <span class="text-secondary">By stewie2k-iwnl</span>
+                    <br>
+                    <span class="text-secondary">21 Likes</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row py-4 px-2">
+            <div class="col-6 col-lg-2">
+                <img class="rounded-3"
+                    src="/assets/images/thumbnails/desserts/lava-cake-recipe.jpg"
+                    height="120px" width="180px" alt="">
+            </div>
+            <div class="col-6  col-lg-10">
+                <div class="ms-3">
+                    <span class="fs-4 fw-medium">Chocolate Lava Cake with Vanilla Ice Cream</span>
+                    <br>
+                    <span class="text-secondary">By i em weldkat</span>
+                    <br>
+                    <span class="text-secondary">14 Likes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

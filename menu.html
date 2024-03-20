@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body class="poppins background-web1">
+    <header>
+        <!-- navbar for web -->
+        <nav class="navbar web-nav shadow fixed-top" style="z-index: 1000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/images/logo1.png" width="130px" alt=""></a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <a class="ms-3 px-2 text-decoration-none text-black mt-2" href="menu.html">Home</a>
+                    <div class="dropdown pt-2 px-1 ">
+                        <a class="dropdown-toggle text-decoration-none text-black" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="grilling&bbq.html">Grilling & Barbeque</a></li>
+                            <li><a class="dropdown-item" href="soups&stew.html">Soups & Stews</a></li>
+                            <li><a class="dropdown-item" href="salads.html">Salads</a></li>
+                            <li><a class="dropdown-item" href="sandwhiches&wraps.html">Sandwhiches & Wraps</a></li>
+                            <li><a class="dropdown-item" href="pasta&noodles.html">Pasta & Noodles</a></li>
+                            <li><a class="dropdown-item" href="desserts.html">Desserts</a></li>
+                            <li><a class="dropdown-item" href="healthy&light.html">Healthy & Light</a></li>
+                            <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                        </ul>
+                    </div>
+                    <a class="px-2 text-decoration-none text-black mt-2" href="">Favorites</a>
+                    <a class="px-2 text-decoration-none text-black mt-2" href="index.html">Logout</a>
+                </form>
+            </div>
+        </nav>
+        <!-- end of nav for web -->
+        <!-- navbar for mobile -->
+        <nav class="navbar mobile-nav bg-body-tertiary fixed-top" style="z-index: 1000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/images/logo1.png" width="100px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a href=""><img src="/assets/images/logo1.png" width="130px" alt=""></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="ms-4">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="menu.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Categories
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="grilling&bbq.html">Grilling & Barbeque</a></li>
+                                        <li><a class="dropdown-item" href="soups&stew.html">Soups & Stews</a></li>
+                                        <li><a class="dropdown-item" href="salads.html">Salads</a></li>
+                                        <li><a class="dropdown-item" href="sandwhiches&wraps.html">Sandwhiches & Wraps</a></li>
+                                        <li><a class="dropdown-item" href="pasta&noodles.html">Pasta & Noodles</a></li>
+                                        <li><a class="dropdown-item" href="desserts.html">Desserts</a></li>
+                                        <li><a class="dropdown-item" href="healthy&light.html">Healthy & Light</a></li>
+                                        <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Favorites</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-lsink active text-decoration-none text-black " aria-current="page"
+                                        href="index.html">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar for mobile -->
+    </header>
+<br><br><br><br><br>
+    <!-- start for carousel -->
+    <div class="container pb-5">
+                <h2 class="pb-3 text-white web">Top Picks for you</h2>
+                <h2 class="pb-3 text-black mobile">Top Picks for you</h2>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2500">
+                            <a href="grilling&bbq.html"><img src="/assets/images/categories/grilling-and-barbeque.jpg" height="400px" width="650px"
+                                class="d-block mx-auto rounded-3 carouselimg" alt="..."></a>
+                            <div class="carousel-caption">
+                                <h5 class="text-decoration-underline">Grilling and Barbeque</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <a href="desserts.html"><img src="/assets/images/categories/desserts.jpg" height="400px" width="650px"
+                                class="d-block mx-auto rounded-3 carouselimg" alt="..."></a>
+                            <div class="carousel-caption">
+                                <h5 class="text-decoration-underline">Desserts</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <a href="sandwhiches&wraps.html"><img src="/assets/images/categories/sandwhiches-and-wraps.jpg" height="400px" width="650px"
+                                class="d-block mx-auto rounded-3 carouselimg" alt="..."></a>
+                            <div class="carousel-caption">
+                                <h5 class="text-decoration-underline">Sandwhiches and Wraps</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+    </div>
+    <!-- end for carousel -->
+        <div class="container-fluid bg-light shadow py-5">
+            <div class="container">
+                <h3 class="text-center">Food Categories</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-6 col-lg-3 text-center">
+                        <a  class="text-decoration-none text-black" href="grilling&bbq.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/grilling-and-barbeque.jpg" height="130px"  width="200px" alt="">
+                        <p>Grilling and Barbeque</p></a>
+                    </div>
+                     <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="soups&stew.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/soups-and-stews.jpg" height="130px" width="200px" alt="">
+                        <p>Soups & Stews</p></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="salads.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/salads.jpg" height="130px" width="200px" alt="">
+                        <p>Salads</p></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="sandwhiches&wraps.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/sandwhiches-and-wraps.jpg" height="130px" width="200px" alt="">
+                        <p>Sandwiches & Wraps</p></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="pasta&noodles.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/pasta-and-noodles.jpg"  height="130px" width="200px" alt="">
+                        <p>Pasta & Noodles</p></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="desserts.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/desserts.jpg" height="130px" width="200px" alt="">
+                        <p>Desserts</p></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="healthy&light.html"><img class="rounded-3 imgmobile" src="/assets/images/categories/healthy-and-light.jpg" height="130px" width="200px" alt="">
+                        <p>Healthy & Light</p></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center">
+                        <a class="text-decoration-none text-black" href="beverages.html"><img class="rounded-3" src="/assets/images/categories/beverages.jfif" height="130px" width="200px" alt="">
+                        <p>Beverages</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="/assets/vendors/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
